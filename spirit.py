@@ -2,8 +2,8 @@ import json
 import datetime
 import asyncio
 
-import discord
-from discord.ext import commands
+import groupme
+from group.ext import commands
 import pydest
 import aioredis
 
@@ -25,7 +25,7 @@ from cogs.destiny import Destiny
 async def _prefix_callable(bot, message):
     """Get current command prefix"""
     base = ['<@{}> '.format(bot.user.id)]
-    if isinstance(message.channel, discord.abc.PrivateChannel):
+    if isinstance(message.channel, groupme.abc.PrivateChannel):
         base.append('!')
     else:
         result = bot.db.get_prefix(message.guild.id)
