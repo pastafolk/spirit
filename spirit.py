@@ -3,7 +3,7 @@ import datetime
 import asyncio
 
 import groupme
-from group.ext import commands
+from groupme.ext import commands
 import pydest
 import aioredis
 
