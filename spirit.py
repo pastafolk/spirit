@@ -81,4 +81,5 @@ if __name__ == '__main__':
     bot.add_cog(Loadout(bot))
     bot.add_cog(Destiny(bot))
 
-    bot.run()
+    bot.run(web: sh target/bin/groupme
+)
